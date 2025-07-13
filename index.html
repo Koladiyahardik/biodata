@@ -111,21 +111,20 @@
     }
 
     .slideshow {
-    position: relative;
-    text-align: center;
-    padding: 40px 20px 20px;
-    min-height: 550px;
+      position: relative;
+      text-align: center;
+      padding: 40px 20px 20px;
+      min-height: 550px;
     }
 
     .slide img {
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 28px;
-    object-fit: contain;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 28px;
+      object-fit: contain;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-
 
     .slide {
       position: absolute;
@@ -148,18 +147,72 @@
       position: relative;
     }
 
+    .caption {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
 
-        .caption {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 500;
+    /* 🎯 Additional Photos Section */
+    .extra-images {
+      padding: 30px 40px;
+    }
+
+    .extra-images h2 {
+      font-size: 1.7rem;
+      color: #6c2aa7;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #d1aaff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      position: relative;
+      max-width: 280px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .download-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255,255,255,0.8);
+      color: #6c2aa7;
+      padding: 6px 10px;
+      font-weight: bold;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #e9d3ff;
     }
 
     .footer {
@@ -199,7 +252,9 @@
       </div>
     </div>
 
-    <!-- English Sections -->
+    <!-- Your other biodata sections go here... -->
+    <!-- Skipped for brevity (Personal, Education, Family, etc.) -->
+  <!-- English Sections -->
     <div class="section content content-en">
       <h2>👤Personal Details</h2>
       <div class="info-grid">
@@ -362,6 +417,22 @@
       <div class="info-grid">
         <div class="info-item"><span>શોખ:</span> વાંચન, મુસાફરી, ટેકનોલોજી અને બિઝનેસ ડેવલપમેન્ટ</div>
         <div class="info-item"><span>વ્યક્તિત્વ:</span> સરળ, સ્નેહાળ, વફાદાર અને પરિવારપ્રેમી</div>
+      </div>
+    </div>
+
+ <!-- 🎯 Additional Photos Section with Download Button -->
+    <div class="section extra-images">
+      <h2>📸 Photos</h2>
+      <div class="image-gallery">
+        <div class="gallery-item">
+          <img src="Hardik1.jpg" alt="Photo 1">
+          <a href="Hardik1.jpg" download class="download-btn">⬇</a>
+        </div>
+        <div class="gallery-item">
+          <img src="Hardik2.jpg" alt="Photo 2">
+          <a href="Hardik2.jpg" download class="download-btn">⬇</a>
+        </div>
+        <!-- Add more images as needed -->
       </div>
     </div>
 
